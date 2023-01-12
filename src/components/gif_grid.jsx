@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import useFetchImg from "../hooks/use_fetch_img"
 import {Gif_item} from "../components"
 
@@ -17,4 +18,8 @@ export const Gif_grid = ({ category }) => {
             </ol>
         </>
     )
+}
+
+Gif_grid.propTypes = {
+    catergoy: PropTypes.string.isRequired
 }

@@ -1,3 +1,5 @@
+import PropsTypes from 'prop-types'
+
 export const Gif_item = ({title, url}) => {
     return (
         <li className="card Gif">
@@ -5,4 +7,9 @@ export const Gif_item = ({title, url}) => {
             <span>{title}</span>                                            
         </li>
     )
+}
+
+Gif_item.propTypes = {
+    title:  PropsTypes.string.isRequired,
+    url: PropsTypes.string.isRequired
 }
